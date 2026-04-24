@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className="min-h-screen container space-y-8">
-      <div className="flex justify-between items-center gap-4">
+      <div className="flex justify-between items-center gap-4 pt-15">
         <div className="space-y-2">
           <h1 className="text-4xl font-bold">Todo List</h1>
           {totalCount > 0 && (
@@ -72,8 +72,9 @@ function App() {
           </Button>
         </div>
       </div>
-
-      <TodoListTable todos={todos} />
+      <div className="pt-4">
+        <TodoListTable todos={todos} />
+      </div>
     </div>
   )
 }
